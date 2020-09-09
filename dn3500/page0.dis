@@ -70,7 +70,8 @@
 .long VEC6
 .long VEC6
 .long VEC6
-.long 0x00070007
+.short 0x0007 ; location 0x100.  the n in SAUn.  in this case, 7 = sau7 = dn3500
+.short 0x0007 ; aux information.  apparently bit 1 = "log error and crash entry points exist", bit 2 = "M68020-based processor board (DSP90,DN330,DN560)"
 .long 0x00002184
 .long 0x00002142
 .long 0x00002966
